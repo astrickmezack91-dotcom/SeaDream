@@ -1,0 +1,772 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SEA DREAM</title>
+    <link rel="stylesheet" href="/mainproject.css">
+    <script src="/mainproject.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+<div class="offer">
+    <marquee direction="left">Exclusive Offer !!!</marquee>
+</div>
+<div class="sticky-top">
+    <div class="navba">
+
+        <h2 >Sea Dream</h2>
+        <P class="search">🔍Search</P><br>
+        <p class="signin">👥Sign in</p>
+        <p class="addcart" onclick="openCart()">🛒 Add Cart <span id="cartCount">0</span></p>
+
+
+    </div></div>
+<div class="navba2">
+    <div class="seafish">
+        <img src="/images/lake fish.jpeg">
+        <br><br>
+        <button type="button"class="btn btn-sm"onclick="openFreshwaterDrawer()">FreshWater Fish</button>
+
+    </div>
+    <div class="seafish">
+        <img src="/images/sea water fish.jpeg"><br><br>
+        <button type="button" class="btn btn btn-sm" onclick="openSeawaterDrawer()">SeaWater Fish</button><br>
+    </div>
+    <div class="seafish">
+        <img src="/images/sea lobster.jpeg"><br><br>
+        <button type="button" class="btn btn btn-sm" onclick="openLobsterDrawer()">Lobster</button><br>
+
+    </div>
+    <div class="seafish">
+        <img src="/images/sea crab.jpeg"><br><br>
+        <button type="button" class="btn btn btn-sm" onclick="openCrabDrawer()">Crab</button><br>
+
+    </div>
+    <div class="combo">
+        <img src="/images/combofish.jpg"><br><br>
+        <button type="button" class="btn btn btn-sm"onclick="openComboDrawer()">Combo Offer</button><br>
+    </div>
+    <div class="deal">
+        <img src="/images/deal.png"><br><br><br><br><br><br>
+        <button type="button" class="btn btn btn-sm"onclick="openTodayDrawer()">Today's Deal</button><br>
+    </div>
+</div>
+<div class="abus">
+    <h3>About         <span>SeaDream</span></h3>
+    <p>Sea Dream is an online fish market created to make fresh and quality seafood easily accessible. We connect customers with a wide variety of fresh fish and seafood, bringing the taste of the sea directly to your doorstep.</p>
+</div>
+<div class="lastbar">
+    <div class="lastbar1">
+        <h4> About us :</h4>
+        <p>Sea Dream brings fresh fish and seafood from the waters to your kitchen. <br>
+            Our online marketplace makes seafood shopping easier, faster, and more convenient.<br>
+            Choose your catch. Place your order. Enjoy the freshness.</p>
+    </div>
+    <div class="lastbar2">
+        <h4>At Sea Dream, we focus on:</h4>
+        <p>🐟 Fresh and quality fish<br>
+            🦐 A wide variety of seafood<br>
+            🦀 Hygienic handling<br>
+            🚚 Safe and reliable delivery<br>
+            🌊 Quality you can trust</p>
+    </div>
+    <div class="lastbar3" >
+        <p>Contact us:</p>
+        <p>🗺️ Colachel, Near Temple, KanniyaKumari 629 802</p>
+        <p>📲+91 89652 89652</p>
+        <p>📧sea@dream.gmail.com</p>
+        <p>🕛Monday-Saturday : 8.30AM - 9.30PM</p>
+    </div>
+</div>
+<br>
+<hr><hr>
+<!-- FIRST PANEL -->
+
+<div id="freshwaterDrawer" class="freshwater-drawer">
+    <div class="sticky-top">
+        <div class="drawer-title">
+
+            <h2>FRESHWATERFISH</h2>
+
+            <button onclick="closeFreshwaterDrawer()">×</button>
+
+        </div></div>
+
+
+    <div class="drawer-products">
+
+        <div class="product-card">
+
+            <img src="/images/tippia fish.jpg">
+
+            <h3>Tilapia <br>(Jelabi Fish)</h3>
+
+            <p>1 kg (₹89)</p>
+
+            <button onclick="addToCart('Tilapia',89)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/kaanndai.jpg">
+
+            <h3>Rohu <br> (Kannadi Kendai)</h3>
+
+            <p> 1 kg (₹149)</p>
+
+            <button onclick="addToCart('Rohu',149)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Catla.jpg">
+
+            <h3>Catla</h3>
+
+            <p>1kg (₹199)</p>
+
+            <button onclick="addToCart('Catla',199)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/carp.jpg">
+
+            <h3>Common Carp</h3>
+
+            <p>1kg (₹119)</p>
+
+            <button onclick="addToCart('Carp',119)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/snakehead.jpg">
+            <h3> Mureel Fish<br> (Viraal Meen)</h3>
+
+            <p>1kg(₹309)</p>
+
+            <button onclick="addToCart('Mureel fish',309)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/kaluthi.jpg">
+
+            <h3>Catfish <br>(Kaluthi Meen)</h3>
+
+            <p>1kg (₹129)</p>
+
+            <button onclick="addToCart('Catfish',129)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SECOND PANEL -->
+
+
+<div id="seawaterDrawer" class="seawater-drawer">
+    <div class="sticky-top">
+        <div class="drawer-title">
+
+            <h2>SEAWATERFISH</h2>
+
+            <button onclick="closeSeawaterDrawer()">×</button>
+
+        </div></div>
+
+
+    <div class="drawer-products">
+
+        <div class="product-card">
+
+            <img src="/images/sarudi.jpg" alt="">
+
+            <h3>Sardeni <br> (Chala)</h3>
+
+            <p>1kg (₹77)</p>
+
+            <button onclick="addToCart('Sardeni',77)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Mackeral.jpg">
+
+            <h3>Mackeral <br> (Ayala)</h3>
+
+            <p>1kg (₹139)</p>
+
+            <button onclick="addToCart('Mackeral',139)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Tuna.jpg">
+
+            <h3>Tuna <br> (Chura)</h3>
+
+            <p>1kg (₹189)</p>
+
+            <button onclick="addToCart('Tuna',189)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/vanjaram.jpg">
+
+            <h3>Seer Fish <br>(Vanjaram)</h3>
+
+            <p>1kg (₹179)</p>
+
+            <button onclick="addToCart('Seer Fish',179)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Nathili.jpg">
+
+            <h3>Anchovy <br>(Nethili)</h3>
+
+            <p>1kg(₹59)</p>
+
+            <button onclick="addToCart('Anchovy',59)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Barracuda.jpg">
+
+            <h3>Barracuda <br>(Sheela)</h3>
+
+            <p>1kg (₹209)</p>
+
+            <button onclick="addToCart('Barracuda ',209)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- THIRD PANEL -->
+
+
+<div id="lobsterDrawer" class="lobster-drawer">
+    <div class="sticky-top">
+        <div class="drawer-title">
+
+            <h2>LOBSTER</h2>
+
+            <button onclick="closeLobsterDrawer()">×</button>
+
+        </div></div>
+
+
+    <div class="drawer-products">
+
+        <div class="product-card">
+
+            <img src="/images/Indian lob.jpg">
+
+            <h3>Indian Rock Lobster</h3>
+
+            <p>1kg (₹1999)</p>
+
+            <button onclick="addToCart('Indian Rock Lobster',1999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/spiny lob.jpg">
+
+            <h3>Spiny <br>Lobster</h3>
+
+            <p>1kg (₹2009)</p>
+
+            <button onclick="addToCart('Spiny Lobster',2009)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/pro spin.webp">
+
+            <h3>Pronghorn Spiny Lobster</h3>
+
+            <p>1kg (₹2999)</p>
+
+            <button onclick="addToCart('Pronghorn Spiny Lobster',2999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Scalloped lob.jpg">
+
+            <h3>Scalloped Spiny Lobster</h3>
+
+            <p>1kg (₹3699)</p>
+
+            <button onclick="addToCart('Scalloped Spiny Lobster',3699)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Painted Spiny Lobster.webp">
+
+            <h3>Painted Spiny Lobster</h3>
+
+            <p>1kg (₹2999)</p>
+
+            <button onclick="addToCart('Painted Spiny Lobster',2999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Green-Lobster.jpg">
+
+            <h3>Green Spiny Lobster</h3>
+
+            <p>1kg (₹4099)</p>
+
+            <button onclick="addToCart('Green Spiny Lobster',4099)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- //////FOURTH PANEL /////// -->
+
+
+<div id="crabDrawer" class="crab-drawer">
+    <div class="sticky-top">
+        <div class="drawer-title">
+
+            <h2 >CRAB</h2>
+
+            <button onclick="closeCrabDrawer()">×</button>
+
+        </div></div>
+
+
+    <div class="drawer-products">
+
+        <div class="product-card">
+
+            <img src="/images/Mud Crab.jpg">
+
+            <h3>Mud Crab</h3>
+
+            <p>1kg (₹750)</p>
+
+            <button onclick="addToCart('Mud Crab',750)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Flower Crab.webp">
+
+            <h3>Flower Crab</h3>
+
+            <p>1kg (₹1079)</p>
+
+            <button onclick="addToCart('Flower Crab',1079)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Blue Crab.webp">
+
+            <h3>Blue Crab</h3>
+
+            <p>1kg (₹2009)</p>
+
+            <button onclick="addToCart('Blue Crab',2009)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Stone Crab.webp">
+
+            <h3>Stone Crab</h3>
+
+            <p>1kg (₹1899)</p>
+
+            <button onclick="addToCart('Stone Crab',1899)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/coconut.webp">
+
+            <h3>Coconut Crab</h3>
+
+            <p>1kg (₹3299)</p>
+
+            <button onclick="addToCart('Coconut crab',3299)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/King Crab.jpeg">
+
+            <h3>King Crab</h3>
+
+            <p>1kg (₹1609)</p>
+
+            <button onclick="addToCart('King Crab',1609)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ///////FIFTH PANEL ////// -->
+
+
+
+<div id="comboDrawer" class="combo-drawer">
+    <div class="sticky-top">
+        <div class="drawer-title">
+
+            <h2>COMBO OFFER</h2>
+
+            <button onclick="closeComboDrawer()">×</button>
+
+        </div></div>
+
+
+    <div class="drawer-products">
+
+        <div class="product-card">
+
+            <img src="/images/combo 1.webp">
+
+            <h3 >Combo-1 <br><span class="comboh3">(Mudcrab-1, Rock Lobster-1, Mackeralfish 1kg)</span></h3>
+
+            <p>₹1999</p>
+
+            <button onclick="addToCart('Combo 1',1999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Combo 2.jpg">
+
+            <h3>Combo 2 <br> <span class="comboh3"> (Flower crab-1kg, Pronghorn Spiny Lobster-1kg)</span></h3>
+
+            <p>₹3799</p>
+
+            <button onclick="addToCart('Combo 2',3799)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Combo-3.jpg">
+
+            <h3>Combo 3 <br><span class="comboh3">(Seerfish 2kg,Spiny Lobster 1kg,Tuna 1kg, Stone crab 2kg)<br><br></span></h3>
+
+            <p>₹4299</p>
+
+            <button onclick="addToCart('Combo 3 ',4299)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Combo-4.webp">
+
+            <h3>Combo 4 <br> <span class="comboh3">(Mackeral fish 1kg, Scalloped Spiny Lobster 3kg, King Crab 2kg)</span></h3>
+
+            <p>₹4899</p>
+
+            <button onclick="addToCart('Combo 4',4899)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Comb0-5.avif">
+
+            <h3>Combo 5 <br> <span class="comboh3">(Barracuda 2kg, Green Spiny Lobster 2kg, Coconut Crab 2kg, Catla 2kg)</span><br></h3>
+
+            <p>₹12999</p>
+
+            <button onclick="addToCart('Combo 5',12999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/combo-6.jpg">
+
+            <h3>Combo 6 <br> <span class="comboh3">(Mureel Fish 3kg, Mackeral 4kg, Spiny Lobster 2kg, Blue Crab 3kg)</span></h3>
+
+            <p>₹11999</p>
+
+            <button onclick="addToCart('Combo 6',11999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- //////SIXTH PANEL ////// -->
+
+
+<div id="todayDrawer" class="today-drawer">
+    <div class="sticky-top">
+        <div class="drawer-title">
+
+            <h2>TODAY's DEAL</h2>
+
+            <button onclick="closeTodayDrawer()">×</button>
+
+        </div></div>
+
+
+    <div class="drawer-products">
+
+        <div class="product-card">
+
+            <img src="/images/Barracuda.jpg">
+
+            <h3>Barracuda 3kg</h3>
+            <div class="offerdeal">
+                <marquee direction="left">12% Discount</marquee>
+            </div>
+            <p><strike style="color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;" >₹627</strike><span class="offe">₹550</span></p>
+
+            <button onclick="addToCart('Barracuda 3kg',550)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Tuna.jpg">
+
+            <h3>Tuna 4kg</h3>
+            <div class="offerdeal">
+                <marquee direction="left">7% Discount</marquee>
+            </div>
+
+            <p><strike style="color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;" >₹756</strike><span class="offe">₹700</span></p>
+
+            <button onclick="addToCart('Tuna 4kg',700)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Green-Lobster.jpg">
+
+            <h3>Green Spiny Lobster 3kg</h3>
+            <div class="offerdeal">
+                <marquee direction="left">6.4 % Discount</marquee>
+            </div>
+
+            <p><strike style="color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;" >₹12,297</strike><span class="offe">₹11,500</span></p>
+
+            <button onclick="addToCart('Green Spiny Lobster 3kg',11500)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Indian lob.jpg">
+
+            <h3>Indian Rock Lobster 2kg</h3>
+
+            <div class="offerdeal">
+                <marquee direction="left">24.9 % Discount</marquee>
+            </div>
+
+            <p><strike style="color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;" >₹3998</strike><span class="offe">₹3000</span></p>
+
+            <button onclick="addToCart('Indian Rock Lobster 2kg',3000)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Blue Crab.webp">
+
+            <h3>Blue Crab 4kg</h3>
+            <div class="offerdeal">
+                <marquee direction="left">6.66 % Discount</marquee>
+            </div>
+
+            <p><strike style="color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;" >₹8036</strike><span class="offe">₹7500</span></p>
+            <button onclick="addToCart('Blue Crab 4kg',7500)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="/images/Mud Crab.jpg">
+
+            <h3>Mud Crab 3kg</h3>
+            <div class="offerdeal">
+                <marquee direction="left">11 % Discount</marquee>
+            </div>
+            <p><strike style="color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;" >₹2250</strike><span class="offe">₹1999</span></p>
+            <button onclick="addToCart('Mud Crab 3kg',1999)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- CART DRAWER -->
+<div id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+        <h2>🛒 My Cart</h2>
+        <button onclick="closeCart()">&times;</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <!-- Products will appear here -->
+    </div>
+
+    <div class="cart-footer">
+        <h3>Total: ₹<span id="cartTotal">0</span></h3>
+        <button onclick="clearCart()" class="clear-cart">
+            Clear Cart
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>

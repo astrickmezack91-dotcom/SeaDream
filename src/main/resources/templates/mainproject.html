@@ -1,0 +1,144 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>SEA DREAM</title>
+
+    <link rel="stylesheet" href="/mainproject.css">
+
+    <script src="/mainproject.js"></script>
+
+</head>
+
+<body>
+
+<video src="/images/OCEAN LOOP.mp4"
+       autoplay
+       muted
+       loop
+       class="oceanvideo">
+</video>
+
+
+<div class="login">
+
+    <h2>Login Your Account with a .....</h2>
+
+    <br>
+
+    <span>Sea Dream</span>
+
+    <br><br><br>
+
+
+    <form id="loginForm" onsubmit="return validateform()">
+
+
+        <!-- NAME -->
+
+        <label class="nams">Name :</label>
+
+        <input
+                type="text"
+                id="name"
+                name="name"
+                class="namsl"
+                placeholder="Enter Name"
+        >
+
+        <div id="nameError" class="error"></div>
+
+
+        <br><br>
+
+
+        <!-- USERNAME -->
+
+        <label class="nam">UserName :</label>
+
+        <input
+                type="text"
+                id="username"
+                name="username"
+                class="naml"
+                placeholder="User Name"
+        >
+
+        <div id="usernameError" class="error"></div>
+
+
+        <br><br>
+
+
+        <!-- PASSWORD -->
+
+        <label class="nam">Password :</label>
+
+        <input
+                type="password"
+                id="password"
+                name="password"
+                class="namls"
+                placeholder="Password"
+        >
+
+        <div id="passwordError" class="error"></div>
+
+
+        <br><br>
+
+
+        <!-- MOBILE NUMBER -->
+
+        <label>Mobile Number :</label>
+
+        <input
+                type="number"
+                id="mobile"
+                name="mobile"
+                class="numm"
+                placeholder="Type Your Number"
+        >
+
+
+        <br><br><br>
+
+
+        <!-- ADDRESS -->
+
+        <label class="namd">Address :</label>
+
+        <textarea
+                id="address"
+                name="address"
+                class="namdd"
+                placeholder="Type your address">
+        </textarea>
+
+
+        <br><br><br>
+
+
+        <!-- SUBMIT -->
+
+        <button
+                type="submit"
+                class="button3">
+            Continue ✔
+        </button>
+
+
+        <div
+                id="sucessMsg"
+                class="sucess">
+        </div>
+
+
+    </form>
+
+</div>
+
+
+</body>
+
+</html>
